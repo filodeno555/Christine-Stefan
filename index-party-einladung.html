@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7e8">
+  <title>Christine &amp; Stefan – Save the Date</title>
+  <meta name="description" content="Save the Date: Christine und Stefan feiern am 12. Juni 2027 am Wannsee in Berlin.">
+  <style>
+    :root {
+      --navy: #173f49;
+      --coral: #f27661;
+      --yellow: #f6cf68;
+      --mint: #d9eadc;
+      --cream: #fff7e8;
+      --white: #fffdf8;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--navy);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 28px 18px 48px;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(246,207,104,.45) 0 72px, transparent 73px),
+        radial-gradient(circle at 95% 40%, rgba(217,234,220,.9) 0 115px, transparent 116px),
+        var(--cream);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .topline {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .topline span { color: var(--coral); }
+
+    .invitation {
+      margin-top: 24px;
+      padding: clamp(28px, 6vw, 62px) clamp(18px, 6vw, 58px);
+      text-align: center;
+      background: var(--white);
+      border: 2px solid var(--navy);
+      border-radius: 28px;
+      box-shadow: 9px 9px 0 var(--mint);
+    }
+
+    .sticker {
+      display: inline-block;
+      margin: 0 0 18px;
+      padding: 7px 16px;
+      border-radius: 30px;
+      background: var(--yellow);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      transform: rotate(-2deg);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 9vw, 82px);
+      line-height: 1.02;
+      letter-spacing: -.06em;
+      font-weight: 900;
+    }
+
+    h1 .amp { color: var(--coral); }
+
+    .intro {
+      max-width: 600px;
+      margin: 24px auto 0;
+      font-size: clamp(17px, 2.5vw, 21px);
+      font-weight: 600;
+    }
+
+    .date {
+      display: inline-block;
+      margin: 28px 0 8px;
+      padding: 13px 24px;
+      color: var(--white);
+      background: var(--navy);
+      border-radius: 15px;
+      font-size: clamp(25px, 5vw, 36px);
+      font-weight: 900;
+    }
+
+    .time {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+      margin-top: 34px;
+      text-align: left;
+    }
+
+    .card {
+      min-width: 0;
+      padding: 21px;
+      background: var(--white);
+      border: 2px solid var(--navy);
+      border-radius: 19px;
+    }
+
+    .card .icon {
+      font-size: 27px;
+      line-height: 1.2;
+    }
+
+    .card h2 {
+      margin: 8px 0 5px;
+      font-size: 21px;
+    }
+
+    .card p { margin: 0; }
+
+    .card.highlight {
+      grid-column: 1 / -1;
+      background: var(--mint);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 21px;
+      border: 2px solid var(--navy);
+      border-radius: 40px;
+      color: var(--navy);
+      font-weight: 800;
+      text-decoration: none;
+      transition: transform .15s ease;
+    }
+
+    .button:hover { transform: translateY(-2px); }
+    .button.primary { background: var(--coral); }
+    .button.secondary { background: var(--yellow); }
+
+    .hint {
+      max-width: 560px;
+      margin: 16px auto 0;
+      font-size: 13px;
+    }
+
+    footer {
+      padding: 34px 10px 0;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+    @media (max-width: 600px) {
+      .details { grid-template-columns: 1fr; }
+      .card.highlight { grid-column: auto; }
+      .invitation { border-radius: 22px; box-shadow: 6px 6px 0 var(--mint); }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <div class="topline">☀️ <span>Save the Date</span> ☀️</div>
+
+      <section class="invitation">
+        <p class="sticker">Sommer · Sonne · Wannsee</p>
+
+        <h1>Christine <span class="amp">&amp;</span><br>Stefan</h1>
+
+        <p class="intro">
+          Wir schmeißen eine Party – und ihr sollt dabei sein!
+          Packt eure gute Laune ein und feiert mit uns einen schönen Sommertag am Wasser.
+        </p>
+
+        <div class="date">12. Juni 2027</div>
+        <p class="time">Ab 15:00 Uhr · Haus am Wannsee, Berlin</p>
+
+        <div class="details">
+          <article class="card">
+            <div class="icon" aria-hidden="true">📍</div>
+            <h2>Wo wird gefeiert?</h2>
+            <p><strong>Haus am Wannsee</strong><br>
+              Badeweg 7<br>
+              14129 Berlin</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🚗</div>
+            <h2>Früher anreisen?</h2>
+            <p>Sehr gerne! Eine Anreise ist bereits am <strong>11. Juni</strong> möglich.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🛏️</div>
+            <h2>Übernachten</h2>
+            <p>Eine Übernachtungsmöglichkeit ist vorhanden. Weitere Informationen folgen.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon" aria-hidden="true">🥳</div>
+            <h2>Was erwartet euch?</h2>
+            <p>Ein entspannter Sommertag mit netten Menschen, guter Stimmung und Zeit am Wannsee.</p>
+          </article>
+
+          <article class="card highlight">
+            <div class="icon" aria-hidden="true">💛</div>
+            <h2>Termin schon mal freihalten!</h2>
+            <p>Die wichtigsten Infos stehen fest. Alles Weitere bekommt ihr rechtzeitig von uns.
+              Wir freuen uns riesig auf euch!</p>
+          </article>
+        </div>
+
+        <div class="actions">
+          <a class="button primary"
+             href="mailto:swessel@gmx.de?subject=Save%20the%20Date%20%E2%80%93%20Christine%20%26%20Stefan&body=Hallo%20Christine%20und%20Stefan%2C%0A%0Awir%20sind%20gerne%20dabei!%0A%0ANamen%3A%0AAnreise%20am%2011.%20Juni%3A%20Ja%20%2F%20Nein%0A%C3%9Cbernachtung%20gew%C3%BCnscht%3A%20Ja%20%2F%20Nein%0A%0AViele%20Gr%C3%BC%C3%9Fe">
+            🎉 Rückmeldung senden
+          </a>
+
+          <a class="button secondary"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Badeweg+7%2C+14129+Berlin"
+             target="_blank" rel="noopener noreferrer">
+            🗺️ Location ansehen
+          </a>
+        </div>
+
+        <p class="hint">
+          Beim Klick auf „Rückmeldung senden“ öffnet sich dein E-Mail-Programm mit einer vorbereiteten Nachricht.
+          Du kannst sie ergänzen und selbst absenden.
+        </p>
+      </section>
+
+      <footer>
+        Christine &amp; Stefan
+        <small>Sommer, Sonne, Wannsee – wir freuen uns auf euch! ☀️</small>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>
